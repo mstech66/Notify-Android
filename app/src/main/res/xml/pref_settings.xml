@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:key="account" android:title="Account">
+        <Preference
+            android:key="logout"
+            android:title="Log Out"
+            android:summary="Log out from Notify"/>
+        <Preference
+            android:key="activity"
+            android:title="Subscribed Topics"
+            android:summary="Manage all the topic subscriptions">
+            <intent
+                android:targetPackage="com.example.manthan.notify"
+                android:targetClass="com.example.manthan.notify.Topics"/>
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="general" android:title="General">
+        <SwitchPreference
+            android:key="darkMode"
+            android:title="Night Mode"
+            android:summary="Enable night mode through out the app" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="about" android:title="About">
+        <Preference
+            android:key="app"
+            android:title="Build Version"
+            android:summary="Notify v0.1.0 (Beta)"/>
+    </PreferenceCategory>
+</PreferenceScreen>
