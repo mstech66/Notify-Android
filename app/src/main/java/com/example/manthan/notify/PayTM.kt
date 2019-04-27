@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 class PayTM {
     @SerializedName("MID")
-    val mId: String? = "cNYJj4343434343434713" //merchant id
+    val mId: String? = "1234" //merchant id
     @SerializedName("ORDER_ID")
     var orderId: String? = null
     @SerializedName("CUST_ID")
